@@ -7,8 +7,14 @@
     */}
 
 import Netflixseries from "./components/Netflixserisloop";
+import "./components/Netflix.css"; 
+// Here we are use component in Netflix.css used to h1
 
 export const App = () => {
-    return <Netflixseries />
-    
+    return (
+    <section className="container">
+        <h1 className="card-heading">List of best Netflix Series</h1>
+        <Netflixseries />
+    </section>
+    );
 };

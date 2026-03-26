@@ -1,0 +1,10 @@
+.card-heading{
+    display: flex;
+    justify-content: center;
+    color: brown;
+    font-weight:bolder;
+}
+
+.Btn{
+    background-color: blue;
+}
