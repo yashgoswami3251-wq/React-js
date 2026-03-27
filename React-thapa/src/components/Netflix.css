@@ -8,3 +8,23 @@
 .Btn{
     background-color: blue;
 }
+
+.Main{
+    height: 500px;
+    width: 400px;
+    background-color: rgb(242, 242, 239);
+}
+
+.image{
+    width: 794px;
+}
+
+.Main button{
+    background-color: rgb(65, 74, 237);
+    margin-left: 30%;
+}
+
+.main, h2, h3, p,button{
+    margin: 9px;
+    padding: 5px;
+}

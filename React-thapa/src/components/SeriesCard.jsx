@@ -17,14 +17,15 @@
 };
 */}
 
+import "/src/components/Netflix.css"; 
 {/* Destructuring in react.js ->*/}
 export const SeriesCard = (props) => {
 
     const {img_url,name,rating,description,genre,cast,watch_url,Name} = props.curr;
 
     return (
-        <li>
-            <div>
+        <li className="Main">
+            <div className="image">
                 <img src={img_url} alt="" height="50%" width="50%" />
             </div>
             <h2>Name:{name}</h2>
@@ -34,9 +35,7 @@ export const SeriesCard = (props) => {
             <p>Cast:{cast}</p>
             <a href={watch_url} target="_blank">
                 <button>Watch now</button>
-            </a>
-            <h2>Name:{Name}</h2>
-            
+            </a>  
         </li>
     );
 };
