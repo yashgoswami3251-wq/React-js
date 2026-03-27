@@ -31,6 +31,7 @@ import "/src/components/Netflix.css";
 {/* Destructuring in react.js ->*/ }
 export const SeriesCard = (props) => {
 
+    {/* Destructuring in react */}
     const { img_url, name, rating, description, genre, cast, watch_url, Name } = props.curr;
 
     return (
@@ -43,7 +44,11 @@ export const SeriesCard = (props) => {
             <div className="Card-container">
 
                 <h2 style={ratting_style}>Name:{name}</h2>
-                <h3 style={ratting_style}>Rating:{rating}</h3>
+
+                {/* Conditional css */}
+                <h3>Rating: <span className={rating >= 8.5 ? "super_hit":"average"}>{rating}</span>
+                </h3>
+                
                 <p>Summary:{description}</p>
                 <p>Genre:{genre}</p>
                 <p>Cast:{cast}</p>
