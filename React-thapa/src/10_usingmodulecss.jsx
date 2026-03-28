@@ -7,5 +7,6 @@ export const App = () => {
         <h1 className="card-heading">List of best Netflix Series</h1>
         <Netflixseries />
     </section>
+    
     );
 };
