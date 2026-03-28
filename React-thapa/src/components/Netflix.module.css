@@ -1,0 +1,32 @@
+.card-heading{
+    display: flex;
+    justify-content: center;
+    color: brown;
+    font-weight:bolder;
+}
+
+.Card{
+    box-shadow: rgba(222, 44, 44, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+img{
+    width: 100%;
+}
+
+.Card-container{
+    padding: 3.2rem 1.2rem;
+}
+
+.super_hit{
+    background-color: green;
+    border-radius: 100%;
+}
+
+.average{
+    background-color: yellow;
+    border-radius: 100%;
+}
+
+.rating{
+    border: 2px salmon;
+}

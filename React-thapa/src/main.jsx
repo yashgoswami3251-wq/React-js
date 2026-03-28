@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { App } from './9_importDestructuring.jsx'
+import { App } from './10_usingmodulecss.jsx'
 import "./index.css";
 
 {/*import Profile from './components/Profile.jsx'*/}
