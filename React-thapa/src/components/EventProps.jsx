@@ -12,7 +12,7 @@ export const Eventprops = () =>{
         <>
 
         <WelcomeUser 
-        // here onButtonclick we can user anything name 
+        // here onButtonclick name we can user use anything name 
         onButtonclick={() => HandleWelcomeUser("yash")} 
         onMouseEnter={handleHover}
         />
