@@ -11,7 +11,6 @@ const ratting_style = {
     fontStyle: "italic",
 }
 
-
 {/* Destructuring in react.js ->*/ }
 export const SeriesCard = (props) => {
 
@@ -39,7 +38,7 @@ export const SeriesCard = (props) => {
                 <a href={watch_url} target="_blank">
                     <button style={style_btn}>Watch now</button>
                 </a>
-
+                
             </div>
         </li>
     );
