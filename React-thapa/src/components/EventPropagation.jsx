@@ -16,16 +16,17 @@ export const EvenPropagation = () => {
     };
 
     return (
-        <section className='main-div'>
+        <div className='main-div'>
             <div className='g-div' onClickCapture={handleGranparent}>  
                 <div className='p-div' onClickCapture={handleparent}>
                     <button className='c-div' onClickCapture={handleChildclick}>
-                        child Div
+                        Child Div
                     </button>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
-// onClickCapture is use for event propagare from top to botton 
-// without use event propagate bottom to top
+
+// onClickCapture is use for event propagate from top to botton 
+// without use event propagate bottom to top only use onClick we can access bottom to top.

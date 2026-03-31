@@ -1,13 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { EvenPropagation } from './components/EventPropagation'
+import { State } from './components/hooks/State'
 import "./index.css";
 
 {/*import Profile from './components/Profile.jsx'*/}
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <EvenPropagation />
+    <State />
     {/*<Profile/>*/}
   </StrictMode>,
 )
