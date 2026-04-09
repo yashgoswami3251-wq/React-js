@@ -4,6 +4,7 @@ export const State = () => {
 
     // count is current value , and setCount is updated variable valur , and useState(0) take a initial valur 
     const [count, setCount] = useState(0);
+    
     console.log("Parent component Rendered");
 
     const Increamentbutton = () => {
@@ -12,11 +13,13 @@ export const State = () => {
     }
 
     return (
+        <>
         <div className="main-div">
             <h1 style={{ marginLeft: "570px" }}>{count}</h1>
             <button onClick={Increamentbutton} style={{ backgroundColor: "yellow", fontSize: "30px", marginLeft: "500px" }}>Increament</button>
-            <Childstate count={count} />
         </div>
+        <Childstate count={count}/>
+        </>
     );
 };
 
@@ -30,12 +33,4 @@ function Childstate({ count }) {
     );
 };
 
-function Sibling (){
-    console.log("Sibling rendred")
-    return(
-        <div>
-            <h2> Sibling components</h2>
-        </div> 
-    );
-};
 

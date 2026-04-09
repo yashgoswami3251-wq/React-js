@@ -8,7 +8,17 @@ import "./index.css";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <State />
-    <Sibling/>
     {/*<Profile/>*/}
-  </StrictMode>,
+    <Sibling />
+  </StrictMode> 
 )
+
+export function Sibling (){
+    console.log("Sibling rendred")
+    
+    return(
+        <div>
+            <h2> Sibling components</h2>
+        </div> 
+    );
+};
