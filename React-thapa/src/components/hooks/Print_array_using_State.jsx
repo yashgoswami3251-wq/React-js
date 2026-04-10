@@ -2,11 +2,12 @@ import React, { useState } from "react";
 
 export const DerivedState = () => {
 
+    // This is our State Logic
     const [users, setUsers] = useState([
-        { name: "yash", age: 25 },
+        { name: "yash", age: 20 },
         { name: "Jay", age: 30 },
-        { name: "yash", age: 35 },
-        { name: "yash", age: 45 },
+        { name: "Kabir", age: 22 },
+        { name: "Kalpesh", age: 23 },
     ]);
 
     return (
