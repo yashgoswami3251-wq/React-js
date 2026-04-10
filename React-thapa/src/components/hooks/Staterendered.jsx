@@ -34,3 +34,15 @@ function Childstate({ count }) {
 };
 
 
+// this code push in to the main.jsx
+
+// export function Sibling (){
+//     console.log("Sibling rendred")
+    
+//     return(
+//         <div>
+//             <h2> Sibling components</h2>
+//         </div> 
+//     );
+// };
+
