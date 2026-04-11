@@ -5,12 +5,18 @@ export const DerivedState = () => {
     // This is our State Logic
     const [users] = useState(
         [
-            { name: "yashgiri", age: 20 },
+            { name: "yash", age: 20 },
             { name: "Jay", age: 30 },
-            { name: "Kabir", age: 22 },
-            { name: "Kalpesh", age: 23 },
+            { name: "Kabir", age: 20 },
+            { name: "Kalpesh", age: 30 },
         ]
     );
+
+    // Derived state: count of users
+    console.log(users);
+    const usercount = users.length;
+
+    const Averageage = users.reduce((accum, curElem) => accum + curElem.age, 0 ) / usercount ;
 
     return (
         <div className="main-div">
@@ -22,7 +28,8 @@ export const DerivedState = () => {
                     </li>
                 ))}
             </ul>
-
+            <li>UserCount : {usercount}</li>
+            <li>Averageage : {Averageage}</li>
         </div>
     );
 };

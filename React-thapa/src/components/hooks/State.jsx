@@ -12,10 +12,11 @@ export const State = () =>{
     // let array = useState();
     // console.log(array);
 
-    // count is current value , and setCount is updated variable valur , and useState(0) take a initial valur 
+    // count is current value , and setCount is updated variable value , and useState(0) take a initial value
+    
      const[count, setCount] = useState(0);
      const Increamentbutton = () =>{
-        setCount(() =>  count + 2);
+        setCount(() =>  count + 1);
         console.log(count);
      }
 

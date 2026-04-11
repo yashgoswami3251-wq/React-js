@@ -1,3 +1,5 @@
+// In react main concept re rendered is Whenever i updated parent component value than change parent -> child component value 
+
 import { useState } from "react";
 
 export const State = () => {
