@@ -49,7 +49,22 @@ export const Todo = () => {
 
         setDateTime(`${currentDate} - ${currentTime}`);
 
-    }, 500);
+    }, 100);
+
+    // todo handleDeleteTodo function
+
+    const handleDeleteTodo = (value) => {
+        console.log(task);
+        console.log(value);
+        const updatedTask = task.filter((curTask) => curTask != value);
+        setTask(updatedTask);
+    }
+
+    // Handle clear tododata all data functionality
+
+    const ClearAllTodo = () =>{
+        setTask([]);
+    }
 
     return (
         <section className="todo-container">
@@ -78,13 +93,16 @@ export const Todo = () => {
                                 <button className="check-btn">
                                     <MdCheck />
                                 </button>
-                                <button className="delete-btn">
+                                <button className="delete-btn" onClick= {() => handleDeleteTodo(curTask)}>
                                     <MdDeleteForever />
                                 </button>
                             </li>
                         })
                     }
                 </ul>
+            </section>
+            <section className="clear-btn" onClick={ClearAllTodo}>
+                <button>Clear All</button>
             </section>
 
         </section>
